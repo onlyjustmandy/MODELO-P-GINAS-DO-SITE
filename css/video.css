@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #044a98;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 350px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+h2{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h3{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+.conteudo{
+    background-color: #3380e6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;   
+}
+
+/*a partir daqui */
+
+.title{
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin: 10px 0;
+    position: relative;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    width: 20%; height: 2px;
+    background-image: linear-gradient(to left, transparent 5%, #3281c0);
+    bottom: -10px; left: 50%;
+    transform: translate(-50%);
+    background-color: aquamarine;
+}
+
+.candidatos-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.membros{
+    flex: 1 1 250px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    cursor: pointer;
+    max-width: 300px;
+    transition: all 0.3s;
+}
+
+.membros:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-20px);
+}
+
+.membros img{
+    display: block;
+    width: 150px; height: 150px;
+    object-fit: cover;
+    border:4px solid #3281c0;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.membros h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #3281c0;
+    margin: 15px 0;
+}
+
+.membros p{
+    font-size: 15px;
+    color: #000000;
+    line-height: 1.6;
+}
+
